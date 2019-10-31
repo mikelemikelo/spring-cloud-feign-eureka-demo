@@ -1,4 +1,4 @@
-package com.mikele.microservices.controllers;
+package com.mikele.microservices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
