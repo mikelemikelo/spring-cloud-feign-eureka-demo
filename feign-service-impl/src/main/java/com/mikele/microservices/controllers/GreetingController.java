@@ -8,7 +8,7 @@ public class GreetingController implements ExampleGreetingFeignController {
 
     @Override
     public String greeting() {
-        return "Method being called from a different Microservice using Feign";
+        return " Hi!! I'm the Microservice inside FEIGN-SERVICE-IMPL  , that's cool, isn't it?";
     }
 
 }

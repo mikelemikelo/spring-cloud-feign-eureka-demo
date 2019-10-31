@@ -9,11 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
 
     @Autowired
-    private ExampleGreetingFeignController greetingClient;
+    private ExampleGreetingFeignController greetingFeignClient;
+
 
     @GetMapping("/get-greeting")
     public String greeting() {
-        return "FEIGN_CLIENT ->" + greetingClient.greeting();
+        return "FIRST REST ENDPOINT FROM: spring-cloud-eureka-feign-client "
+                + "    Calling inside a different REST Endpoint located at a different Microservice, and this is the response ->  {  \n "
+                + greetingFeignClient.greeting()   + " } ";
     }
 
 }
